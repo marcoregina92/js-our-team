@@ -19,7 +19,7 @@ const staff = [
     },
 
     {
-        nome: "angelaLopez",
+        nome: "Angela Lopez",
         posizione: "Social Media Manager",
         img: "angela-lopez-social-media-manager.jpg"
     },
@@ -42,5 +42,6 @@ const staff = [
 for (let i = 0; i < staff.length; i++) {
     const person = staff[i];
     console.log(`Nome: ${person.nome}, Posizione: ${person.posizione}, Immagine: ${person.img}` );
-
+    
+    document.getElementById("container").innerHTML += `<p>Nome: ${person.nome}, Posizione: ${person.posizione}, Immagine: ${person.img}</p>`;
 }
